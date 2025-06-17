@@ -26,13 +26,29 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
 
-    iframe {
-      margin-top: 30px;
-      width: 90%;
-      max-width: 600px;
-      height: 315px;
+    .yt-channel {
+      margin-top: 40px;
+    }
+
+    .yt-channel img {
+      width: 300px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .yt-channel button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #c62828;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .yt-channel button:hover {
+      background-color: #b71c1c;
     }
 
     footer {
@@ -52,13 +68,15 @@
 
   <img src="first-beach.JPG" alt="My First Beach Trip" />
 
-  <!-- YouTube Video Embed -->
-  <iframe 
-    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-  </iframe>
+  <!-- YouTube Channel Link -->
+  <div class="yt-channel">
+    <h2>📺 Visit My YouTube Channel</h2>
+    <a href="https://www.youtube.com/@awanggantv" target="_blank">
+      <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="YouTube Preview" />
+      <br/>
+      <button>Watch Now</button>
+    </a>
+  </div>
 
   <footer>
     &copy; 2025 RaiNel. All rights reserved.
