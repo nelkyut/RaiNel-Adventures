@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <title>RaiNel Adventures</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
@@ -15,22 +18,18 @@
     }
 
     header {
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.4);
       color: white;
       padding: 40px 20px;
       font-family: 'Pacifico', cursive;
       font-size: 32px;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
       backdrop-filter: blur(4px);
     }
 
     section {
-      background: rgba(0, 0, 0, 0.4);
-      padding: 30px;
-      border-radius: 10px;
+      padding: 30px 20px;
       margin: 30px auto;
       max-width: 1000px;
-      backdrop-filter: blur(4px);
     }
 
     .gallery {
@@ -46,6 +45,7 @@
 
     .gallery img {
       width: 300px;
+      max-width: 100%;
       border-radius: 15px;
       box-shadow: 0 0 10px rgba(0,0,0,0.5);
       transition: transform 0.3s ease;
@@ -55,9 +55,7 @@
       transform: scale(1.05);
     }
 
-    .yt-channel button,
-    .blog-button button,
-    .controls button {
+    button {
       margin-top: 10px;
       padding: 12px 24px;
       font-size: 16px;
@@ -69,33 +67,36 @@
       transition: background-color 0.3s ease;
     }
 
-    .yt-channel button:hover,
-    .blog-button button:hover,
-    .controls button:hover {
+    button:hover {
       background-color: #ad1457;
     }
 
     footer {
       padding: 20px;
       font-size: 14px;
-      background: rgba(0, 0, 0, 0.5);
-      margin-top: 40px;
+      background: rgba(0, 0, 0, 0.4);
       backdrop-filter: blur(4px);
     }
 
-    .controls {
-      margin-top: 20px;
+    /* Responsive layout */
+    @media (max-width: 768px) {
+      header {
+        font-size: 24px;
+      }
+      .gallery img {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
 
-  <header>
+  <header data-aos="fade-down">
     🌸 RaiNel Adventures 🌸
     <p>Tara at samahan ninyo kami sa aming kaganapan!</p>
   </header>
 
-  <section>
+  <section data-aos="fade-up">
     <h2>Adventure Gallery</h2>
     <div class="gallery">
       <a href="blog.html">
@@ -110,25 +111,25 @@
     </div>
   </section>
 
-  <section class="blog-button">
+  <section data-aos="zoom-in">
     <a href="blog.html">
-      <button>📖 Basahin ang Kwento</button>
+      <button>📖 Basahin ang Kwento 📖</button>
     </a>
   </section>
 
-  <section>
-    <h2>👨‍👩‍👧 Kilalanin Kami</h2>
+  <section data-aos="fade-right">
+    <h2>👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧</h2>
     <p>Kami ay isang simpleng pamilya na mahilig maglakbay. Sama-sama naming tinatahak ang mga bundok, tabing dagat, at bawat kwento ng buhay na puno ng alaala.</p>
   </section>
 
-  <section class="yt-channel">
-    <h2>📺 Bisitahin ang YouTube Channel</h2>
+  <section data-aos="fade-left">
+    <h2>Bisitahin ang aming Youtube Channel</h2>
     <a href="https://www.youtube.com/@awanggantv" target="_blank">
       <button>Watch Now</button>
     </a>
   </section>
 
-  <section class="controls">
+  <section data-aos="zoom-in-up">
     <button onclick="toggleMusic()">🎵 Play/Pause Music</button>
   </section>
 
@@ -136,6 +137,7 @@
     &copy; 2025 RaiNel Adventures. All rights reserved.
   </footer>
 
+  <!-- Music -->
   <audio id="bg-music" loop>
     <source src="music/He Mele No Lilo.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
@@ -150,6 +152,15 @@
         music.pause();
       }
     }
+  </script>
+
+  <!-- AOS scroll animation -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+    });
   </script>
 
 </body>
