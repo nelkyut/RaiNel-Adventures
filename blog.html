@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Adventure Stories | RaiNel Adventures</title>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -60,8 +62,9 @@
       flex-wrap: wrap;
     }
 
-    .image-row img {
-      width: 32%;
+    .image-row a img {
+      width: 100%;
+      max-width: 280px;
       border-radius: 10px;
     }
 
@@ -93,9 +96,15 @@
       <small>May 26, 2022</small>
       <p>Isa sa mga pinaka-memorable na hike namin. Dahil ito ang unang perstaym na aakyat ng bundok ang aking pinakamamahal na asawa. Grabe ang bilib ko sakanya dahil kinaya niya ito kahit walang experience haha. Natatawa nalang ako at kinakabahan siyempre hehe</p>
       <div class="image-row">
-        <img src="images/apo1.jpg" alt="Mt. Apo 1">
-        <img src="images/apo2.jpg" alt="Mt. Apo 2">
-        <img src="images/apo3.jpg" alt="Mt. Apo 3">
+        <a href="images/apo1.jpg" data-lightbox="apo" data-title="Mt. Apo 1">
+          <img src="images/apo1.jpg" alt="Mt. Apo 1">
+        </a>
+        <a href="images/apo2.jpg" data-lightbox="apo" data-title="Mt. Apo 2">
+          <img src="images/apo2.jpg" alt="Mt. Apo 2">
+        </a>
+        <a href="images/apo3.jpg" data-lightbox="apo" data-title="Mt. Apo 3">
+          <img src="images/apo3.jpg" alt="Mt. Apo 3">
+        </a>
       </div>
     </div>
 
@@ -104,12 +113,21 @@
       <small>December 06, 2021</small>
       <p>Pinaka memorable na gala. Nagmotor kami mula Bulacan hanggang makarating sa Panay Island. Nagpunta kami sa Boracay Island at pagkatapos namin doon ay nagpunta naman kami sa Gigantes Island. Sulit na sulit ang aming ginawang gala na ito kahit nakakapagod</p>
       <div class="image-row">
-        <img src="images/panay1.jpg" alt="Panay Ride 1">
-        <img src="images/panay2.jpg" alt="Panay Ride 2">
-        <img src="images/panay3.jpg" alt="Panay Ride 3">
+        <a href="images/panay1.jpg" data-lightbox="panay" data-title="Panay Ride 1">
+          <img src="images/panay1.jpg" alt="Panay Ride 1">
+        </a>
+        <a href="images/panay2.jpg" data-lightbox="panay" data-title="Panay Ride 2">
+          <img src="images/panay2.jpg" alt="Panay Ride 2">
+        </a>
+        <a href="images/panay3.jpg" data-lightbox="panay" data-title="Panay Ride 3">
+          <img src="images/panay3.jpg" alt="Panay Ride 3">
+        </a>
       </div>
     </div>
 
   </div>
+
+  <!-- Lightbox2 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 </body>
 </html>
