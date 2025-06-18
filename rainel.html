@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adventure Stories | RaiNel Adventures</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Lightbox CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: url('images/bg.JPG') no-repeat fixed center;
+      background-size: cover;
+      color: #4e004e;
+    }
+
+    header {
+      background-color: rgba(194, 24, 91, 0.85);
+      color: white;
+      padding: 30px 20px;
+      font-family: 'Pacifico', cursive;
+      font-size: 28px;
+      text-align: center;
+      backdrop-filter: blur(5px);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      font-family: 'Pacifico', cursive;
+      font-size: 24px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .blog-post {
+  background-color: rgba(255, 255, 255, 0.35); /* Lighter transparency */
+  padding: 20px;
+  margin-bottom: 40px;
+  border-left: 5px solid #c2185b;
+  border-radius: 10px;
+  backdrop-filter: blur(4px); /* nice frosted effect */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* soft shadow */
+    }
+
+    .blog-post img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3); /* adds float effect */
+}
+
+    .blog-post h3 {
+      color: #c2185b;
+      margin-top: 0;
+    }
+
+    .blog-post small {
+      display: block;
+      margin-bottom: 10px;
+      color: #777;
+    }
+
+    .image-row {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    .image-row a img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 10px;
+    }
+
+    a.back-link {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: #c2185b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    😊 RaiNel Adventure Stories 😊
+  </header>
+
+  <div class="container">
+    <a href="index.html" class="back-link">← Bumalik sa Home</a>
+
+    <h2>Mga Kwento ng Aming Paglalakbay</h2>
+
+    <div class="blog-post" data-aos="fade-up">
+      <h3>🌄 Mt. Apo Hike, Davao Del Sur</h3>
+      <small>May 26, 2022</small>
+      <p>Isa sa mga pinaka-memorable na hike namin. Dahil ito ang unang perstaym na aakyat ng bundok ang aking pinakamamahal na asawa. Grabe ang bilib ko sakanya dahil kinaya niya ito kahit walang experience haha. Natatawa nalang ako at kinakabahan siyempre hehe</p>
+      <div class="image-row">
+        <a href="images/apo1.jpg" data-lightbox="apo" data-title="Mt. Apo 1">
+          <img src="images/apo1.jpg" alt="Mt. Apo 1">
+        </a>
+        <a href="images/apo2.jpg" data-lightbox="apo" data-title="Mt. Apo 2">
+          <img src="images/apo2.jpg" alt="Mt. Apo 2">
+        </a>
+        <a href="images/apo3.jpg" data-lightbox="apo" data-title="Mt. Apo 3">
+          <img src="images/apo3.jpg" alt="Mt. Apo 3">
+        </a>
+      </div>
+    </div>
+
+    <div class="blog-post" data-aos="fade-right">
+      <h3>🛵 Long Ride sa Panay Island</h3>
+      <small>December 06, 2021</small>
+      <p>Pinaka memorable na gala. Nagmotor kami mula Bulacan hanggang makarating sa Panay Island. Nagpunta kami sa Boracay Island at pagkatapos namin doon ay nagpunta naman kami sa Gigantes Island. Sulit na sulit ang aming ginawang gala na ito kahit nakakapagod</p>
+      <div class="image-row">
+        <a href="images/panay1.jpg" data-lightbox="panay" data-title="Panay Ride 1">
+          <img src="images/panay1.jpg" alt="Panay Ride 1">
+        </a>
+        <a href="images/panay2.jpg" data-lightbox="panay" data-title="Panay Ride 2">
+          <img src="images/panay2.jpg" alt="Panay Ride 2">
+        </a>
+        <a href="images/panay3.jpg" data-lightbox="panay" data-title="Panay Ride 3">
+          <img src="images/panay3.jpg" alt="Panay Ride 3">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      offset: 120,
+    });
+  </script>
+
+</body>
+</html>
