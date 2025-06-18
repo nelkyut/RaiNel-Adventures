@@ -4,38 +4,33 @@
   <meta charset="UTF-8" />
   <title>RaiNel Adventures</title>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <style>
-    html, body {
+    body {
       margin: 0;
       padding: 0;
       font-family: 'Quicksand', sans-serif;
+      background: url('images/background.JPG') fixed center center / cover no-repeat;
       color: white;
       text-align: center;
     }
 
-    body {
-      background: #111;
-    }
-
-    .parallax {
-      background-image: url('images/background.JPG');
-      min-height: 100vh;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-    }
-
     header {
-      background-color: rgba(194, 24, 91, 0.85);
-      padding: 30px 20px;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 40px 20px;
       font-family: 'Pacifico', cursive;
-      font-size: 28px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+      font-size: 32px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(4px);
+    }
+
+    section {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 30px;
+      border-radius: 10px;
+      margin: 30px auto;
+      max-width: 1000px;
+      backdrop-filter: blur(4px);
     }
 
     .gallery {
@@ -43,183 +38,110 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-      padding: 30px;
     }
 
-    .gallery a img {
-      width: 280px;
+    .gallery a {
+      display: block;
+    }
+
+    .gallery img {
+      width: 300px;
       border-radius: 15px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
       transition: transform 0.3s ease;
     }
 
-    .gallery a img:hover {
+    .gallery img:hover {
       transform: scale(1.05);
     }
 
-    .about-us {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 40px 20px;
-      margin: 50px auto;
-      max-width: 800px;
-      border-radius: 15px;
-      backdrop-filter: blur(6px);
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-    }
-
-    .about-us h2 {
-      font-family: 'Pacifico', cursive;
-      margin-bottom: 15px;
-      color: white;
-    }
-
-    .about-us p {
-      color: #f9f9f9;
-    }
-
-    .about-us img {
-      width: 300px;
-      margin-top: 20px;
-      border-radius: 15px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.5);
-    }
-
-    .yt-channel {
-      margin: 40px 0;
-    }
-
-    .yt-channel button {
+    .yt-channel button,
+    .blog-button button,
+    .controls button {
       margin-top: 10px;
-      padding: 10px 20px;
+      padding: 12px 24px;
       font-size: 16px;
       background-color: #e91e63;
       color: white;
       border: none;
       border-radius: 30px;
       cursor: pointer;
+      transition: background-color 0.3s ease;
     }
 
-    .yt-channel button:hover {
+    .yt-channel button:hover,
+    .blog-button button:hover,
+    .controls button:hover {
       background-color: #ad1457;
-    }
-
-    .blog-button {
-      margin-top: 40px;
-    }
-
-    .blog-button a button {
-      background-color: #ba2d65;
-      color: white;
-      padding: 12px 24px;
-      font-size: 16px;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-    }
-
-    .blog-button a button:hover {
-      background-color: #9c1c4c;
-    }
-
-    .controls {
-      margin-top: 30px;
-    }
-
-    .controls button {
-      padding: 10px 20px;
-      margin: 5px;
-      font-size: 16px;
-      border-radius: 30px;
-      border: none;
-      cursor: pointer;
-    }
-
-    .music-toggle:hover {
-      background-color: #ec407a;
     }
 
     footer {
       padding: 20px;
       font-size: 14px;
-      background: #c2185b;
-      color: white;
+      background: rgba(0, 0, 0, 0.5);
       margin-top: 40px;
+      backdrop-filter: blur(4px);
     }
 
-    @media (max-width: 768px) {
-      .gallery a img,
-      .about-us img {
-        width: 90%;
-      }
+    .controls {
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
 
-  <div class="parallax">
-    <header data-aos="fade-down">
-      🌸 RaiNel Adventures 🌸
-      <p>Tara at samahan ninyo kami sa aming kaganapan!</p>
-    </header>
+  <header>
+    🌸 RaiNel Adventures 🌸
+    <p>Tara at samahan ninyo kami sa aming kaganapan!</p>
+  </header>
 
-    <!-- Adventure Gallery -->
-    <section class="gallery" data-aos="fade-up">
-      <a href="anak.html">
+  <section>
+    <h2>Adventure Gallery</h2>
+    <div class="gallery">
+      <a href="blog.html">
+        <img src="images/first-beach.JPG" alt="First Beach Adventure">
+      </a>
+      <a href="blog.html">
         <img src="images/1.JPG" alt="Adventure Photo 1">
       </a>
       <a href="blog.html">
         <img src="images/2.JPG" alt="Adventure Photo 2">
       </a>
-      <a href="blog.html">
-        <img src="images/first-beach.JPG" alt="First Beach Adventure">
-      </a>
-    </section>
-  </div>
-
-  <!-- About Us Section -->
-  <section class="about-us" data-aos="fade-up">
-    <h2>👨‍👩‍👧 Kilalanin Kami</h2>
-    <p>RaiNel Adventures – Short for RAIzza and roNEL. Ang pangalan ng aming nag-iisang babae ay RAINEL.</p>
-    <p>Isang simpleng pamilya na mahilig maglakbay, gutom sa bagong tanawin, bundok, at kwento. Mula sa dagat hanggang tuktok ng bundok, lagi kaming may baong ngiti, kwento, at masarap na pagkain.</p>
-    <img src="images/family.JPG" alt="RaiNel Family" />
+    </div>
   </section>
 
-  <!-- Blog Button -->
-  <div class="blog-button" data-aos="zoom-in">
+  <section class="blog-button">
     <a href="blog.html">
       <button>📖 Basahin ang Kwento</button>
     </a>
-  </div>
+  </section>
 
-  <!-- YouTube Channel -->
-  <div class="yt-channel" data-aos="fade-up">
+  <section>
+    <h2>👨‍👩‍👧 Kilalanin Kami</h2>
+    <p>Kami ay isang simpleng pamilya na mahilig maglakbay. Sama-sama naming tinatahak ang mga bundok, tabing dagat, at bawat kwento ng buhay na puno ng alaala.</p>
+  </section>
+
+  <section class="yt-channel">
     <h2>📺 Bisitahin ang YouTube Channel</h2>
     <a href="https://www.youtube.com/@awanggantv" target="_blank">
       <button>Watch Now</button>
     </a>
-  </div>
+  </section>
 
-  <!-- Controls -->
-  <div class="controls" data-aos="fade-up">
-    <button class="music-toggle" onclick="toggleMusic()">🎵 Play/Pause Music</button>
-  </div>
+  <section class="controls">
+    <button onclick="toggleMusic()">🎵 Play/Pause Music</button>
+  </section>
 
-  <!-- Footer -->
-  <footer data-aos="fade-up">
+  <footer>
     &copy; 2025 RaiNel Adventures. All rights reserved.
   </footer>
 
-  <!-- Background Music -->
   <audio id="bg-music" loop>
     <source src="music/He Mele No Lilo.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 
-  <!-- Scripts -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({ once: true });
-
     const music = document.getElementById('bg-music');
     function toggleMusic() {
       if (music.paused) {
