@@ -1,179 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Adventure Stories | RaiNel Adventures</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <title>RaiNel Adventures</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- AOS CSS -->
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <!-- AOS Animation -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <!-- Lightbox CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Lobster', cursive;
-      background: url('images/bg.JPG') no-repeat fixed center;
-      background-size: cover;
-      color: #4e004e;
+      font-family: 'Quicksand', sans-serif;
+      background: url('images/background.JPG') fixed center center / cover no-repeat;
+      color: #6a1b9a; /* purple */
+      text-align: center;
     }
 
     header {
-      background-color: rgba(194, 24, 91, 0.85);
+      background: #f06292; /* pink */
       color: white;
-      padding: 30px 20px;
-      font-family: 'Lobster', cursive;
-      font-size: 28px;
+      padding: 40px 20px 30px;
       text-align: center;
-      backdrop-filter: blur(5px);
+      font-family: 'Lobster', cursive;
+      font-size: 42px;
+      line-height: 1.2;
     }
 
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
+    header p {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 20px;
+      margin-top: 10px;
+      font-weight: 400;
+    }
+
+    .about-section {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 18px;
+      margin-top: 10px;
       padding: 0 20px;
-      background-color: rgba(255, 255, 255, 0.9);
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    section {
+      padding: 30px 20px;
+      margin: 30px auto;
+      max-width: 1000px;
     }
 
     h2 {
       font-family: 'Lobster', cursive;
-      font-size: 24px;
-      margin-bottom: 30px;
-      text-align: center;
+      font-size: 28px;
     }
 
-    .blog-post {
-  background-color: rgba(255, 255, 255, 0.35); /* Lighter transparency */
-  padding: 20px;
-  margin-bottom: 40px;
-  border-left: 5px solid #c2185b;
-  border-radius: 10px;
-  backdrop-filter: blur(4px); /* nice frosted effect */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* soft shadow */
-    }
-
-    .blog-post img {
-  width: 100%;
-  border-radius: 10px;
-  margin-top: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3); /* adds float effect */
-}
-
-    .blog-post h3 {
-      color: #c2185b;
-      margin-top: 0;
-    }
-
-    .blog-post small {
-      display: block;
-      margin-bottom: 10px;
-      color: #777;
-    }
-
-    .image-row {
+    .gallery {
       display: flex;
-      gap: 10px;
-      margin-top: 10px;
       flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
     }
 
-    .image-row a img {
-      width: 100%;
-      max-width: 200px;
-      border-radius: 10px;
+    .gallery a {
+      display: block;
     }
 
-    a.back-link {
-      display: inline-block;
-      margin-bottom: 30px;
-      color: #c2185b;
-      text-decoration: none;
-      font-weight: bold;
+    .gallery img {
+      width: 300px;
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
     }
 
-    a.back-link:hover {
-      text-decoration: underline;
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #ab47bc;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #6a1b9a;
+    }
+
+    footer {
+      padding: 20px;
+      font-size: 14px;
+      background: #f06292; /* pink */
+      color: white;
+      backdrop-filter: none;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        font-size: 30px;
+      }
+      .gallery img {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    😊 RAINEL KYUTIE Stories 😊
+  <header data-aos="fade-down">
+    🌸 RaiNel Adventures 🌸
+    <p>Tara at samahan ninyo kami sa aming kaganapan!</p>
+    <div class="about-section">
+      Kami ay isang simpleng pamilya na mahilig maglakbay. Sama-sama naming tinatahak ang mga bundok, tabing dagat, at bawat kwento ng buhay na puno ng alaala.
+    </div>
   </header>
 
-  <div class="container">
-    <a href="index.html" class="back-link">← Bumalik sa Home</a>
-
-    <h2>Mga Imahe bawat buwan</h2>
-
-    <div class="blog-post" data-aos="fade-up">
-      <h3>Unang Buwan</h3>
-      <small>August 08, 2023</small>
-      <p>Isa sa mga pinaka masayang part dahil sa wakas isang buwan na ang aming prinsesa. Unang buwan na puno sa hirap, pagod, puyat hehe.</p>
-      <div class="image-row">
-        <a href="images/rainel1.1.jpg" data-lightbox="apo" data-title="rainel 1">
-          <img src="images/rainel1.1.jpg" alt="rainel 1">
-        </a>
-        <a href="images/rainel1.2.jpg" data-lightbox="apo" data-title="rainel 2">
-          <img src="images/rainel1.2.jpg" alt="rainel 2">
-        </a>
-        <a href="images/rainel1.3.jpg" data-lightbox="apo" data-title="rainel 3">
-          <img src="images/rainel1.3.jpg" alt="rainel 3">
-        </a>
-        <a href="images/rainel1.4.jpg" data-lightbox="apo" data-title="rainel 4">
-          <img src="images/rainel1.4.jpg" alt="rainel 4">
-        </a>
-      </div>
+  <section data-aos="fade-up">
+    <h2>Adventure Gallery</h2>
+    <div class="gallery">
+      <a href="blog.html">
+        <img src="images/first-beach.JPG" alt="First Beach Adventure">
+      </a>
+      <a href="blog.html">
+        <img src="images/1.JPG" alt="Adventure Photo 1">
+      </a>
+      <a href="blog.html">
+        <img src="images/2.JPG" alt="Adventure Photo 2">
+      </a>
     </div>
+  </section>
 
-    <div class="blog-post" data-aos="fade-right">
-      <h3>Ikalawang Buwan</h3>
-      <small>September 08, 2023</small>
-      <p>Sa wakas nakaraos ulit ng isang buwan, aba'y dalawang buwan kana at apaka bilis ng panahon anak</p>
-      <div class="image-row">
-        <a href="images/panay1.jpg" data-lightbox="panay" data-title="Panay Ride 1">
-          <img src="images/panay1.jpg" alt="Panay Ride 1">
-        </a>
-        <a href="images/panay2.jpg" data-lightbox="panay" data-title="Panay Ride 2">
-          <img src="images/panay2.jpg" alt="Panay Ride 2">
-        </a>
-        <a href="images/panay3.jpg" data-lightbox="panay" data-title="Panay Ride 3">
-          <img src="images/panay3.jpg" alt="Panay Ride 3">
-        </a>
-      </div>
-    </div>
-  </div>
+  <section data-aos="zoom-in">
+    <a href="blog.html">
+      <button>📖 Basahin ang Kwento 📖</button>
+    </a>
+  </section>
 
-  <div class="blog-post" data-aos="fade-right">
-      <h3>Ikatlong Buwan</h3>
-      <small>October 08, 2023</small>
-      <p>Yehey tatlong buwan na!</p>
-      <div class="image-row">
-        <a href="images/panay1.jpg" data-lightbox="panay" data-title="Panay Ride 1">
-          <img src="images/panay1.jpg" alt="Panay Ride 1">
-        </a>
-        <a href="images/panay2.jpg" data-lightbox="panay" data-title="Panay Ride 2">
-          <img src="images/panay2.jpg" alt="Panay Ride 2">
-        </a>
-        <a href="images/panay3.jpg" data-lightbox="panay" data-title="Panay Ride 3">
-          <img src="images/panay3.jpg" alt="Panay Ride 3">
-        </a>
-      </div>
-    </div>
-  </div>
-  
-  <!-- JS Libraries -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <section data-aos="fade-left">
+    <h2>Bisitahin ang aming Youtube Channel</h2>
+    <a href="https://www.youtube.com/@awanggantv" target="_blank">
+      <button>Watch Now</button>
+    </a>
+  </section>
+
+  <section data-aos="zoom-in-up">
+    <button onclick="toggleMusic()">🎵 Play/Pause Music</button>
+  </section>
+
+  <footer>
+    &copy; 2025 RaiNel Adventures. All rights reserved.
+  </footer>
+
+  <!-- Music -->
+  <audio id="bg-music" loop>
+    <source src="music/He Mele No Lilo.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    const music = document.getElementById('bg-music');
+    function toggleMusic() {
+      if (music.paused) {
+        music.play();
+      } else {
+        music.pause();
+      }
+    }
+  </script>
+
+  <!-- AOS scroll animation -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({
+      once: true,
       duration: 1000,
-      offset: 120,
     });
   </script>
 
