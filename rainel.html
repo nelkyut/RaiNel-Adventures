@@ -1,127 +1,140 @@
 <!DOCTYPE html>
-<html lang="tl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mga Buwan ni Rainel</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+  <title>Rainel Kyutie | Birth Story</title>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
+      padding: 0;
       font-family: 'Quicksand', sans-serif;
-      background-color: #fff8f5;
-      text-align: center;
-      padding: 20px;
-      color: #6a1b9a;
+      background: #fff0f5;
+      color: #5c4084;
     }
 
     header {
-      font-family: 'Pacifico', cursive;
-      font-size: 32px;
-      color: #f06292;
-      margin-bottom: 10px;
+      background-color: #f8bbd0;
+      color: #5c4084;
+      padding: 40px 20px;
+      font-family: 'Chewy', cursive;
+      font-size: 36px;
+      text-align: center;
+      border-bottom: 5px dashed #f48fb1;
     }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      max-width: 1000px;
-      margin: auto;
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     }
 
-    .gallery a {
-      text-decoration: none;
-      color: inherit;
+    h2 {
+      font-family: 'Chewy', cursive;
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #ec407a;
+      text-align: center;
     }
 
-    .gallery img {
-      width: 100%;
-      border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-
-    .gallery img:hover {
-      transform: scale(1.03);
-    }
-
-    .caption {
-      margin-top: 8px;
-      font-weight: bold;
+    p {
       font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 20px;
     }
 
-    footer {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #999;
+    .image-box {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .image-box img {
+      max-width: 100%;
+      width: 350px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      color: #ec407a;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        font-size: 26px;
+      }
+
+      .container {
+        margin: 20px;
+        padding: 15px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <header>📸 Mga Buwan ni Rainel</header>
-  <p>Isang alaala sa bawat buwan mula pagkapanganak hanggang unang kaarawan!</p>
+  <header>
+    👶 Kwento ng Pagdating ni Rainel 💕
+  </header>
 
-  <div class="gallery">
-    <a href="images/rainel/1.jpg" data-lightbox="rainel" data-title="Ika-1 Buwan">
-      <img src="images/rainel/1.jpg" alt="Ika-1 Buwan">
-      <div class="caption">Ika-1 Buwan</div>
-    </a>
-    <a href="images/rainel/2.jpg" data-lightbox="rainel" data-title="Ika-2 Buwan">
-      <img src="images/rainel/2.jpg" alt="Ika-2 Buwan">
-      <div class="caption">Ika-2 Buwan</div>
-    </a>
-    <a href="images/rainel/3.jpg" data-lightbox="rainel" data-title="Ika-3 Buwan">
-      <img src="images/rainel/3.jpg" alt="Ika-3 Buwan">
-      <div class="caption">Ika-3 Buwan</div>
-    </a>
-    <a href="images/rainel/4.jpg" data-lightbox="rainel" data-title="Ika-4 Buwan">
-      <img src="images/rainel/4.jpg" alt="Ika-4 Buwan">
-      <div class="caption">Ika-4 Buwan</div>
-    </a>
-    <a href="images/rainel/5.jpg" data-lightbox="rainel" data-title="Ika-5 Buwan">
-      <img src="images/rainel/5.jpg" alt="Ika-5 Buwan">
-      <div class="caption">Ika-5 Buwan</div>
-    </a>
-    <a href="images/rainel/6.jpg" data-lightbox="rainel" data-title="Ika-6 Buwan">
-      <img src="images/rainel/6.jpg" alt="Ika-6 Buwan">
-      <div class="caption">Ika-6 Buwan</div>
-    </a>
-    <a href="images/rainel/7.jpg" data-lightbox="rainel" data-title="Ika-7 Buwan">
-      <img src="images/rainel/7.jpg" alt="Ika-7 Buwan">
-      <div class="caption">Ika-7 Buwan</div>
-    </a>
-    <a href="images/rainel/8.jpg" data-lightbox="rainel" data-title="Ika-8 Buwan">
-      <img src="images/rainel/8.jpg" alt="Ika-8 Buwan">
-      <div class="caption">Ika-8 Buwan</div>
-    </a>
-    <a href="images/rainel/9.jpg" data-lightbox="rainel" data-title="Ika-9 Buwan">
-      <img src="images/rainel/9.jpg" alt="Ika-9 Buwan">
-      <div class="caption">Ika-9 Buwan</div>
-    </a>
-    <a href="images/rainel/10.jpg" data-lightbox="rainel" data-title="Ika-10 Buwan">
-      <img src="images/rainel/10.jpg" alt="Ika-10 Buwan">
-      <div class="caption">Ika-10 Buwan</div>
-    </a>
-    <a href="images/rainel/11.jpg" data-lightbox="rainel" data-title="Ika-11 Buwan">
-      <img src="images/rainel/11.jpg" alt="Ika-11 Buwan">
-      <div class="caption">Ika-11 Buwan</div>
-    </a>
-    <a href="images/rainel/12.jpg" data-lightbox="rainel" data-title="Ika-12 Buwan">
-      <img src="images/rainel/12.jpg" alt="Ika-12 Buwan">
-      <div class="caption">Ika-12 Buwan</div>
-    </a>
+  <div class="container" data-aos="fade-up">
+    <h2>Ang Simula ng Lahat</h2>
+
+    <p>Noong unang nalaman namin na kami'y magiging magulang, labis ang aming tuwa at kaba. Araw-araw ay puno ng paghahanda, dasal, at pag-asa para sa ligtas at masayang pagdating ng aming munting anghel.</p>
+
+    <div class="image-box">
+      <img src="images/ultrasound.jpg" alt="Ultrasound ni baby Rainel">
+      <p><small>📸 Unang ultrasound ni Rainel</small></p>
+    </div>
+
+    <p>📅 <strong>Due Date:</strong> August 10, 2023  
+       <br>👶 <strong>Actual Birth:</strong> August 08, 2023  
+       <br>🏥 <strong>Pinanganak sa:</strong> [Ilagay Hospital o Lugar]</p>
+
+    <p>Ang araw ng kanyang kapanganakan ay puno ng emosyon. Ang bawat minutong lumilipas ay nagiging mas totoo ang realidad — na malapit na naming mayakap ang aming unang anak.</p>
+
+    <div class="image-box">
+      <img src="images/babyborn.jpg" alt="Pagkapanganak kay Rainel">
+      <p><small>📸 First picture right after birth</small></p>
+    </div>
+
+    <p>Nang una naming marinig ang kanyang iyak, napuno ang aming puso ng kakaibang saya. Iba ang tibok ng puso, ang pagluha ay dahil sa sobrang pagmamahal at pasasalamat.</p>
+
+    <p>Sa bawat araw na lumilipas, siya ay lumalaki nang mas masaya, mas malusog, at mas mapagmahal. Siya ang liwanag sa aming tahanan.</p>
+
+    <div class="image-box">
+      <img src="images/firsthug.jpg" alt="First hug">
+      <p><small>🤱 Unang yakap kay baby Rainel</small></p>
+    </div>
+
+    <p>At dito nagsimula ang kwento ng aming mahal na Rainel Kyutie. Isang taon ng pagmamahal, saya, at hindi matatawarang alaala.</p>
+
+    <a href="index.html" class="back-link">← Bumalik sa Home</a>
   </div>
 
-  <footer>
-    &copy; 2025 RaiNel Adventures. Lahat ng karapatan ay nakalaan.
-  </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+  <!-- JS Libraries -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      offset: 120,
+    });
+  </script>
 
 </body>
 </html>
