@@ -73,19 +73,25 @@
     }
 
     button {
-      margin-top: 10px;
-      padding: 12px 24px;
+      margin: 10px 10px;
+      padding: 14px 32px;
       font-size: 16px;
-      background-color: #e91e63;
+      font-weight: bold;
+      background-color: #ff7043;
       color: white;
       border: none;
-      border-radius: 30px;
+      border-radius: 999px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
 
     button:hover {
-      background-color: #ad1457;
+      background-color: #d84315;
+      transform: translateY(-3px);
     }
 
     footer {
@@ -101,6 +107,10 @@
       }
       .gallery-item {
         width: 100%;
+      }
+      button {
+        width: 90%;
+        justify-content: center;
       }
     }
   </style>
@@ -142,19 +152,17 @@
   </section>
 
   <section data-aos="zoom-in">
-    <a href="blog.html">
-      <button>📖 Basahin ang Kwento 📖</button>
-    </a>
-  </section>
-
-  <section data-aos="fade-left">
-    <a href="https://www.youtube.com/@awanggantv" target="_blank">
-      <button>🎥 YouTube Channel</button>
-    </a>
-  </section>
-
-  <section data-aos="zoom-in-up">
+    <a href="blog.html"><button>📖 Basahin ang Kwento</button></a>
+    <a href="https://www.youtube.com/@awanggantv" target="_blank"><button>📺 YouTube Channel</button></a>
     <button onclick="toggleMusic()">🎵 Play/Pause Music</button>
+  </section>
+
+  <section data-aos="fade-up">
+    <button>⛺ Camping Trips</button>
+    <button>🏔️ Bundok Adventures</button>
+    <button>🚙 Road Trips</button>
+    <button>🌊 Dagat Moments</button>
+    <button>🛵 Motor Diaries</button>
   </section>
 
   <footer>
