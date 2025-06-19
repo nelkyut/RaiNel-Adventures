@@ -18,7 +18,7 @@
     }
 
     header {
-      background: #f06292; /* solid pink */
+      background: #f06292;
       color: white;
       padding: 40px 20px 20px;
       font-family: 'Pacifico', cursive;
@@ -26,7 +26,6 @@
     }
 
     .intro-text {
-      font-family: 'Quicksand', sans-serif;
       font-size: 16px;
       margin-top: 10px;
       color: white;
@@ -46,19 +45,39 @@
     }
 
     .gallery a {
+      position: relative;
       display: block;
+      text-decoration: none;
+      color: white;
+      width: 300px;
     }
 
     .gallery img {
-      width: 300px;
-      max-width: 100%;
+      width: 100%;
       border-radius: 15px;
       box-shadow: 0 0 10px rgba(0,0,0,0.5);
       transition: transform 0.3s ease;
     }
 
-    .gallery img:hover {
+    .gallery a:hover img {
       transform: scale(1.05);
+    }
+
+    .overlay-caption {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0,0,0,0.5);
+      width: 100%;
+      padding: 10px;
+      border-radius: 0 0 15px 15px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .gallery a:hover .overlay-caption {
+      opacity: 1;
     }
 
     button {
@@ -80,16 +99,21 @@
     footer {
       padding: 20px;
       font-size: 14px;
-      background: #f06292; /* solid pink */
+      background: #f06292;
       color: white;
     }
 
-    /* Responsive layout */
     @media (max-width: 768px) {
       header {
         font-size: 24px;
       }
-      .gallery img {
+
+      .gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .gallery a {
         width: 100%;
       }
     }
@@ -108,14 +132,17 @@
     <div class="gallery">
       <a href="blog.html">
         <img src="images/first-beach.JPG" alt="First Beach Adventure">
+        <div class="overlay-caption">Adventure Gallery</div>
       </a>
-      <h2>RAINEL KYUTIE</h2>
+
       <a href="rainel.html">
-        <img src="images/1.JPG" alt="Adventure Photo 1">
+        <img src="images/1.JPG" alt="Rainel Kyutie">
+        <div class="overlay-caption">Rainel Kyutie</div>
       </a>
-      <h2>MGA GALAAN</h2>
+
       <a href="blog.html">
-        <img src="images/2.JPG" alt="Adventure Photo 2">
+        <img src="images/2.JPG" alt="Mga Galaan">
+        <div class="overlay-caption">Mga Galaan</div>
       </a>
     </div>
   </section>
