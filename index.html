@@ -45,31 +45,31 @@
     }
 
     .gallery-item {
-      width: 300px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 280px;
       text-align: center;
+      transition: transform 0.3s ease;
     }
 
     .gallery-item img {
       width: 100%;
-      border-radius: 15px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-      transition: transform 0.3s ease;
+      display: block;
+      border-bottom: 1px solid #eee;
     }
 
-    .gallery-item img:hover {
-      transform: scale(1.05);
-    }
-
-    .caption {
-      margin-top: 10px;
+    .gallery-item .caption {
+      padding: 12px 10px;
       font-weight: bold;
       font-size: 16px;
       color: #6a1b9a;
+      background-color: white;
     }
 
-    .gallery-item a {
-      text-decoration: none;
-      color: inherit;
+    .gallery-item:hover {
+      transform: scale(1.03);
     }
 
     button {
@@ -99,12 +99,6 @@
       header {
         font-size: 24px;
       }
-
-      .gallery {
-        flex-direction: column;
-        align-items: center;
-      }
-
       .gallery-item {
         width: 100%;
       }
@@ -125,7 +119,7 @@
 
       <div class="gallery-item">
         <a href="blog.html">
-          <img src="images/first-beach.JPG" alt="First Beach Adventure">
+          <img src="images/first-beach.JPG" alt="Adventure Gallery">
           <div class="caption">Adventure Gallery</div>
         </a>
       </div>
@@ -155,7 +149,7 @@
 
   <section data-aos="fade-left">
     <a href="https://www.youtube.com/@awanggantv" target="_blank">
-      <button>Bisitahin ang aming YouTube Channel</button>
+      <button>🎥 YouTube Channel</button>
     </a>
   </section>
 
