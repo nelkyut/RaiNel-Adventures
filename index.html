@@ -44,40 +44,32 @@
       gap: 20px;
     }
 
-    .gallery a {
-      position: relative;
-      display: block;
-      text-decoration: none;
-      color: white;
+    .gallery-item {
       width: 300px;
+      text-align: center;
     }
 
-    .gallery img {
+    .gallery-item img {
       width: 100%;
       border-radius: 15px;
       box-shadow: 0 0 10px rgba(0,0,0,0.5);
       transition: transform 0.3s ease;
     }
 
-    .gallery a:hover img {
+    .gallery-item img:hover {
       transform: scale(1.05);
     }
 
-    .overlay-caption {
-      position: absolute;
-      bottom: 0;
-      background: rgba(0,0,0,0.5);
-      width: 100%;
-      padding: 10px;
-      border-radius: 0 0 15px 15px;
-      opacity: 0;
-      transition: opacity 0.3s ease;
+    .caption {
+      margin-top: 10px;
       font-weight: bold;
       font-size: 16px;
+      color: #6a1b9a;
     }
 
-    .gallery a:hover .overlay-caption {
-      opacity: 1;
+    .gallery-item a {
+      text-decoration: none;
+      color: inherit;
     }
 
     button {
@@ -113,7 +105,7 @@
         align-items: center;
       }
 
-      .gallery a {
+      .gallery-item {
         width: 100%;
       }
     }
@@ -130,20 +122,28 @@
   <section data-aos="fade-up">
     <h2>Adventure Gallery</h2>
     <div class="gallery">
-      <a href="blog.html">
-        <img src="images/first-beach.JPG" alt="First Beach Adventure">
-        <div class="overlay-caption">Adventure Gallery</div>
-      </a>
 
-      <a href="rainel.html">
-        <img src="images/1.JPG" alt="Rainel Kyutie">
-        <div class="overlay-caption">Rainel Kyutie</div>
-      </a>
+      <div class="gallery-item">
+        <a href="blog.html">
+          <img src="images/first-beach.JPG" alt="First Beach Adventure">
+          <div class="caption">Adventure Gallery</div>
+        </a>
+      </div>
 
-      <a href="blog.html">
-        <img src="images/2.JPG" alt="Mga Galaan">
-        <div class="overlay-caption">Mga Galaan</div>
-      </a>
+      <div class="gallery-item">
+        <a href="rainel.html">
+          <img src="images/1.JPG" alt="Rainel Kyutie">
+          <div class="caption">Rainel Kyutie</div>
+        </a>
+      </div>
+
+      <div class="gallery-item">
+        <a href="blog.html">
+          <img src="images/2.JPG" alt="Mga Galaan">
+          <div class="caption">Mga Galaan</div>
+        </a>
+      </div>
+
     </div>
   </section>
 
