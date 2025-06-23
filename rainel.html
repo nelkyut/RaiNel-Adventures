@@ -75,16 +75,10 @@
       text-align: center;
     }
     .month-images {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
-      animation: fadeIn 1s ease-in-out;
-    }
-    .month-images a {
-      display: block;
-      width: 220px;
-      text-align: center;
+      margin-bottom: 30px;
     }
     .month-images a img {
       width: 100%;
@@ -94,15 +88,6 @@
     }
     .month-images a:hover img {
       transform: scale(1.05);
-    }
-    .caption {
-      font-size: 14px;
-      color: #8e24aa;
-      margin-top: 6px;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
     }
     @media (max-width: 768px) {
       header { font-size: 26px; }
@@ -139,24 +124,15 @@
     <h2>🎂 Buwan-buwan na Alaala</h2>
     <p>Isang gallery ng mga ngiti ni Rainel, mula ika-1 hanggang ika-12 buwan! 💖</p>
     <div class="month-gallery">
-      <!-- Auto-generated monthly image blocks with captions and animation -->
+      <!-- Monthly image groups -->
       " + [...Array(12)].map((_, i) => {
         const m = i + 1;
         return `
       <div class="month-title">📅 Ika-${m} Buwan</div>
       <div class="month-images">
-        <a href="images/rainel/${m}-1.jpg" data-lightbox="rainel" data-title="Ika-${m} Buwan - 1">
-          <img src="images/rainel/${m}-1.jpg">
-          <div class="caption">Alaala 1</div>
-        </a>
-        <a href="images/rainel/${m}-2.jpg" data-lightbox="rainel" data-title="Ika-${m} Buwan - 2">
-          <img src="images/rainel/${m}-2.jpg">
-          <div class="caption">Alaala 2</div>
-        </a>
-        <a href="images/rainel/${m}-3.jpg" data-lightbox="rainel" data-title="Ika-${m} Buwan - 3">
-          <img src="images/rainel/${m}-3.jpg">
-          <div class="caption">Alaala 3</div>
-        </a>
+        <a href="images/rainel/${m}-1.jpg" data-lightbox="rainel" data-title="Ika-${m} Buwan - 1"><img src="images/rainel/${m}-1.jpg"></a>
+        <a href="images/rainel/${m}-2.jpg" data-lightbox="rainel" data-title="Ika-${m} Buwan - 2"><img src="images/rainel/${m}-2.jpg"></a>
+        <a href="images/rainel/${m}-3.jpg" data-lightbox="rainel" data-title="Ika-${m} Buwan - 3"><img src="images/rainel/${m}-3.jpg"></a>
       </div>`;
       }).join('\n') + "
     </div>
