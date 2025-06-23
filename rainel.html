@@ -54,7 +54,8 @@
       margin: 20px 0;
     }
 
-    .image-box img {
+    .image-box img,
+    .image-box video {
       max-width: 100%;
       width: 350px;
       border-radius: 15px;
@@ -132,14 +133,16 @@
 
     <p>Ang araw ng kanyang kapanganakan ay puno ng emosyon. Ang bawat minutong lumilipas ay nagiging mas totoo ang realidad — na malapit na naming mayakap ang aming unang anak.</p>
 
+    <!-- ✅ Updated: Video right after birth -->
     <div class="image-box">
-      <img src="images/firsthug.jpg" alt="Pagkapanganak kay Rainel">
-      <p><small>📸 First picture right after birth</small></p>
+      <video controls>
+        <source src="videos/afterbirth.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p><small>🎥 First moments right after birth</small></p>
     </div>
 
     <p>Nang una naming marinig ang kanyang iyak, napuno ang aming puso ng kakaibang saya. Iba ang tibok ng puso, ang pagluha ay dahil sa sobrang pagmamahal at pasasalamat.</p>
-
-    <p>Sa bawat araw na lumilipas, siya ay lumalaki nang mas masaya, mas malusog, at mas mapagmahal. Siya ang liwanag sa aming tahanan.</p>
 
     <div class="image-box">
       <img src="images/firsthug.jpg" alt="First hug">
@@ -152,10 +155,6 @@
     <p>Isang gallery ng mga ngiti ni Rainel, mula sa ika-1 hanggang ika-12 buwan! 💖</p>
 
     <div class="month-gallery">
-      <!-- Loop through 1 to 12 images -->
-      <!-- Replace or add images in images/rainel/1.jpg to 12.jpg -->
-      <!-- Each image must exist in your folder -->
-      <!-- Sample entry: -->
       <a href="images/rainel/1.jpg" data-lightbox="rainel" data-title="Ika-1 Buwan"><img src="images/rainel/1.jpg" alt="Ika-1 Buwan"><div class="caption">Ika-1 Buwan</div></a>
       <a href="images/rainel/2.jpg" data-lightbox="rainel" data-title="Ika-2 Buwan"><img src="images/rainel/2.jpg" alt="Ika-2 Buwan"><div class="caption">Ika-2 Buwan</div></a>
       <a href="images/rainel/3.jpg" data-lightbox="rainel" data-title="Ika-3 Buwan"><img src="images/rainel/3.jpg" alt="Ika-3 Buwan"><div class="caption">Ika-3 Buwan</div></a>
