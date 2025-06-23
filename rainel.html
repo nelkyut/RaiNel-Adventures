@@ -6,7 +6,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
-
   <style>
     body {
       margin: 0;
@@ -15,7 +14,6 @@
       background: #fff0f5;
       color: #5c4084;
     }
-
     header {
       background-color: #f8bbd0;
       color: #5c4084;
@@ -25,7 +23,6 @@
       text-align: center;
       border-bottom: 5px dashed #f48fb1;
     }
-
     .container {
       max-width: 900px;
       margin: 40px auto;
@@ -34,7 +31,6 @@
       border-radius: 20px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     }
-
     h2 {
       font-family: 'Chewy', cursive;
       font-size: 28px;
@@ -42,18 +38,15 @@
       color: #ec407a;
       text-align: center;
     }
-
     p {
       font-size: 16px;
       line-height: 1.7;
       margin-bottom: 20px;
     }
-
     .image-box {
       text-align: center;
       margin: 20px 0;
     }
-
     .image-box img,
     .image-box video {
       max-width: 100%;
@@ -61,7 +54,6 @@
       border-radius: 15px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
-
     .back-link {
       display: inline-block;
       margin-top: 20px;
@@ -69,71 +61,69 @@
       text-decoration: none;
       font-weight: bold;
     }
-
     .back-link:hover {
       text-decoration: underline;
     }
-
     .month-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      margin-top: 40px;
+      margin-top: 30px;
     }
-
-    .month-gallery a img {
+    .month-title {
+      font-weight: bold;
+      font-size: 18px;
+      margin: 20px 0 10px;
+      color: #6a1b9a;
+      text-align: center;
+    }
+    .month-images {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .month-images a {
+      display: block;
+      width: 220px;
+      text-align: center;
+    }
+    .month-images a img {
       width: 100%;
       border-radius: 15px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.15);
       transition: transform 0.3s ease;
     }
-
-    .month-gallery a:hover img {
+    .month-images a:hover img {
       transform: scale(1.05);
     }
-
     .caption {
-      font-weight: bold;
-      font-size: 15px;
+      font-size: 14px;
+      color: #8e24aa;
       margin-top: 6px;
-      color: #6a1b9a;
     }
-
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
     @media (max-width: 768px) {
-      header {
-        font-size: 26px;
-      }
-
-      .container {
-        margin: 20px;
-        padding: 15px;
-      }
+      header { font-size: 26px; }
+      .container { margin: 20px; padding: 15px; }
     }
   </style>
 </head>
 <body>
-
   <header>
     👶 Kwento ng Pagdating ni Rainel 💕
   </header>
-
   <div class="container" data-aos="fade-up">
     <h2>Ang Simula ng Lahat</h2>
-
-    <p>Noong unang nalaman namin na kami'y magiging magulang, labis ang aming tuwa at kaba. Araw-araw ay puno ng paghahanda, dasal, at pag-asa para sa ligtas at masayang pagdating ng aming munting anghel.</p>
-
+    <p>Noong unang nalaman namin na kami'y magiging magulang...</p>
     <div class="image-box">
       <img src="images/ultrasound.jpg" alt="Ultrasound ni baby Rainel">
       <p><small>📸 Unang ultrasound ni Rainel</small></p>
     </div>
-
-    <p>📅 <strong>Due Date:</strong> July 10, 2023  
-       <br>👶 <strong>Actual Birth:</strong> July 08, 2023  
-       <br>🏥 <strong>Pinanganak sa:</strong> [CMC, Valenzuela City]</p>
-
-    <p>Ang araw ng kanyang kapanganakan ay puno ng emosyon. Ang bawat minutong lumilipas ay nagiging mas totoo ang realidad — na malapit na naming mayakap ang aming unang anak.</p>
-
-    <!-- ✅ Updated: Video right after birth -->
+    <p>📅 <strong>Due Date:</strong> July 10, 2023<br>
+       👶 <strong>Actual Birth:</strong> July 08, 2023<br>
+       🏥 <strong>Pinanganak sa:</strong> [CMC, Valenzuela City]</p>
     <div class="image-box">
       <video controls>
         <source src="videos/afterbirth.mp4" type="video/mp4">
@@ -141,46 +131,39 @@
       </video>
       <p><small>🎥 First moments right after birth</small></p>
     </div>
-
-    <p>Nang una naming marinig ang kanyang iyak, napuno ang aming puso ng kakaibang saya. Iba ang tibok ng puso, ang pagluha ay dahil sa sobrang pagmamahal at pasasalamat.</p>
-
+    <p>Nang una naming marinig ang kanyang iyak...</p>
     <div class="image-box">
       <img src="images/firsthug.jpg" alt="First hug">
       <p><small>🤱 Unang yakap kay baby Rainel</small></p>
     </div>
-
-    <p>At dito nagsimula ang kwento ng aming mahal na Rainel Kyutie. Isang taon ng pagmamahal, saya, at hindi matatawarang alaala.</p>
-
     <h2>🎂 Buwan-buwan na Alaala</h2>
-    <p>Isang gallery ng mga ngiti ni Rainel, mula sa ika-1 hanggang ika-12 buwan! 💖</p>
-
+    <p>Isang gallery ng mga ngiti ni Rainel, mula ika-1 hanggang ika-12 buwan! 💖</p>
     <div class="month-gallery">
-      <a href="images/rainel/1.jpg" data-lightbox="rainel" data-title="Ika-1 Buwan"><img src="images/rainel/1.jpg" alt="Ika-1 Buwan"><div class="caption">Ika-1 Buwan</div></a>
-      <a href="images/rainel/2.jpg" data-lightbox="rainel" data-title="Ika-2 Buwan"><img src="images/rainel/2.jpg" alt="Ika-2 Buwan"><div class="caption">Ika-2 Buwan</div></a>
-      <a href="images/rainel/3.jpg" data-lightbox="rainel" data-title="Ika-3 Buwan"><img src="images/rainel/3.jpg" alt="Ika-3 Buwan"><div class="caption">Ika-3 Buwan</div></a>
-      <a href="images/rainel/4.jpg" data-lightbox="rainel" data-title="Ika-4 Buwan"><img src="images/rainel/4.jpg" alt="Ika-4 Buwan"><div class="caption">Ika-4 Buwan</div></a>
-      <a href="images/rainel/5.jpg" data-lightbox="rainel" data-title="Ika-5 Buwan"><img src="images/rainel/5.jpg" alt="Ika-5 Buwan"><div class="caption">Ika-5 Buwan</div></a>
-      <a href="images/rainel/6.jpg" data-lightbox="rainel" data-title="Ika-6 Buwan"><img src="images/rainel/6.jpg" alt="Ika-6 Buwan"><div class="caption">Ika-6 Buwan</div></a>
-      <a href="images/rainel/7.jpg" data-lightbox="rainel" data-title="Ika-7 Buwan"><img src="images/rainel/7.jpg" alt="Ika-7 Buwan"><div class="caption">Ika-7 Buwan</div></a>
-      <a href="images/rainel/8.jpg" data-lightbox="rainel" data-title="Ika-8 Buwan"><img src="images/rainel/8.jpg" alt="Ika-8 Buwan"><div class="caption">Ika-8 Buwan</div></a>
-      <a href="images/rainel/9.jpg" data-lightbox="rainel" data-title="Ika-9 Buwan"><img src="images/rainel/9.jpg" alt="Ika-9 Buwan"><div class="caption">Ika-9 Buwan</div></a>
-      <a href="images/rainel/10.jpg" data-lightbox="rainel" data-title="Ika-10 Buwan"><img src="images/rainel/10.jpg" alt="Ika-10 Buwan"><div class="caption">Ika-10 Buwan</div></a>
-      <a href="images/rainel/11.jpg" data-lightbox="rainel" data-title="Ika-11 Buwan"><img src="images/rainel/11.jpg" alt="Ika-11 Buwan"><div class="caption">Ika-11 Buwan</div></a>
-      <a href="images/rainel/12.jpg" data-lightbox="rainel" data-title="Ika-12 Buwan"><img src="images/rainel/12.jpg" alt="Ika-12 Buwan"><div class="caption">Ika-12 Buwan</div></a>
+      <!-- Auto-generated monthly image blocks with captions and animation -->
+      " + [...Array(12)].map((_, i) => {
+        const m = i + 1;
+        return `
+      <div class="month-title">📅 Ika-${m} Buwan</div>
+      <div class="month-images">
+        <a href="images/rainel/${m}-1.jpg" data-lightbox="rainel" data-title="Ika-${m} Buwan - 1">
+          <img src="images/rainel/${m}-1.jpg">
+          <div class="caption">Alaala 1</div>
+        </a>
+        <a href="images/rainel/${m}-2.jpg" data-lightbox="rainel" data-title="Ika-${m} Buwan - 2">
+          <img src="images/rainel/${m}-2.jpg">
+          <div class="caption">Alaala 2</div>
+        </a>
+        <a href="images/rainel/${m}-3.jpg" data-lightbox="rainel" data-title="Ika-${m} Buwan - 3">
+          <img src="images/rainel/${m}-3.jpg">
+          <div class="caption">Alaala 3</div>
+        </a>
+      </div>`;
+      }).join('\n') + "
     </div>
-
     <a href="index.html" class="back-link">← Bumalik sa Home</a>
   </div>
-
-  <!-- JS Libraries -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      offset: 120,
-    });
-  </script>
-
+  <script>AOS.init({ duration: 1000, offset: 120 });</script>
 </body>
 </html>
