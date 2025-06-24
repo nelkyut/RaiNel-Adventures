@@ -81,15 +81,23 @@
       margin-top: 40px;
     }
 
+    .month-gallery a {
+      text-decoration: none;
+    }
+
     .month-gallery a img {
       width: 100%;
+      height: 220px;
+      object-fit: cover;
       border-radius: 15px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, border 0.3s ease;
+      border: 3px solid transparent;
     }
 
     .month-gallery a:hover img {
       transform: scale(1.05);
+      border: 3px solid #f48fb1;
     }
 
     .caption {
@@ -97,6 +105,15 @@
       font-size: 15px;
       margin-top: 6px;
       color: #6a1b9a;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .month-gallery a:hover .caption {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     @media (max-width: 768px) {
@@ -133,7 +150,6 @@
 
     <p>Ang araw ng kanyang kapanganakan ay puno ng emosyon. Ang bawat minutong lumilipas ay nagiging mas totoo ang realidad — na malapit na naming mayakap ang aming unang anak.</p>
 
-    <!-- ✅ Updated: Video right after birth -->
     <div class="image-box">
       <video controls>
         <source src="videos/afterbirth.mp4" type="video/mp4">
@@ -155,18 +171,54 @@
     <p>Isang gallery ng mga ngiti ni Rainel, mula sa ika-1 hanggang ika-12 buwan! 💖</p>
 
     <div class="month-gallery">
-      <a href="images/rainel1.jpg" data-lightbox="rainel" data-title="First Month as AURORA"><img src="images/rainel1.jpg" alt="Ika-1 Buwan"><div class="caption">Ika-1 Buwan</div></a>
-      <a href="images/rainel2.jpg" data-lightbox="rainel" data-title="Ika-2 Buwan"><img src="images/rainel2.jpg" alt="Ika-2 Buwan"><div class="caption">Ika-2 Buwan</div></a>
-      <a href="images/rainel3.jpg" data-lightbox="rainel" data-title="Ika-3 Buwan"><img src="images/rainel3.jpg" alt="Ika-3 Buwan"><div class="caption">Ika-3 Buwan</div></a>
-      <a href="images/rainel4.jpg" data-lightbox="rainel" data-title="Ika-4 Buwan"><img src="images/rainel4.jpg" alt="Ika-4 Buwan"><div class="caption">Ika-4 Buwan</div></a>
-      <a href="images/rainel5.jpg" data-lightbox="rainel" data-title="Ika-5 Buwan"><img src="images/rainel5.jpg" alt="Ika-5 Buwan"><div class="caption">Ika-5 Buwan</div></a>
-      <a href="images/rainel6.jpg" data-lightbox="rainel" data-title="Ika-6 Buwan"><img src="images/rainel6.jpg" alt="Ika-6 Buwan"><div class="caption">Ika-6 Buwan</div></a>
-      <a href="images/rainel7.jpg" data-lightbox="rainel" data-title="Ika-7 Buwan"><img src="images/rainel7.jpg" alt="Ika-7 Buwan"><div class="caption">Ika-7 Buwan</div></a>
-      <a href="images/rainel8.jpg" data-lightbox="rainel" data-title="Ika-8 Buwan"><img src="images/rainel8.jpg" alt="Ika-8 Buwan"><div class="caption">Ika-8 Buwan</div></a>
-      <a href="images/rainel9.jpg" data-lightbox="rainel" data-title="Ika-9 Buwan"><img src="images/rainel9.jpg" alt="Ika-9 Buwan"><div class="caption">Ika-9 Buwan</div></a>
-      <a href="images/rainel10.jpg" data-lightbox="rainel" data-title="Ika-10 Buwan"><img src="images/rainel10.jpg" alt="Ika-10 Buwan"><div class="caption">Ika-10 Buwan</div></a>
-      <a href="images/rainel11.jpg" data-lightbox="rainel" data-title="Ika-11 Buwan"><img src="images/rainel11.jpg" alt="Ika-11 Buwan"><div class="caption">Ika-11 Buwan</div></a>
-      <a href="images/rainel12.jpg" data-lightbox="rainel" data-title="Ika-12 Buwan"><img src="images/rainel12.jpg" alt="Ika-12 Buwan"><div class="caption">Ika-12 Buwan</div></a>
+      <a href="images/rainel1.jpg" data-lightbox="rainel" data-title="First Month as AURORA">
+        <img src="images/rainel1.jpg" alt="Ika-1 Buwan">
+        <div class="caption">Ika-1 Buwan</div>
+      </a>
+      <a href="images/rainel2.jpg" data-lightbox="rainel" data-title="Ika-2 Buwan">
+        <img src="images/rainel2.jpg" alt="Ika-2 Buwan">
+        <div class="caption">Ika-2 Buwan</div>
+      </a>
+      <a href="images/rainel3.jpg" data-lightbox="rainel" data-title="Ika-3 Buwan">
+        <img src="images/rainel3.jpg" alt="Ika-3 Buwan">
+        <div class="caption">Ika-3 Buwan</div>
+      </a>
+      <a href="images/rainel4.jpg" data-lightbox="rainel" data-title="Ika-4 Buwan">
+        <img src="images/rainel4.jpg" alt="Ika-4 Buwan">
+        <div class="caption">Ika-4 Buwan</div>
+      </a>
+      <a href="images/rainel5.jpg" data-lightbox="rainel" data-title="Ika-5 Buwan">
+        <img src="images/rainel5.jpg" alt="Ika-5 Buwan">
+        <div class="caption">Ika-5 Buwan</div>
+      </a>
+      <a href="images/rainel6.jpg" data-lightbox="rainel" data-title="Ika-6 Buwan">
+        <img src="images/rainel6.jpg" alt="Ika-6 Buwan">
+        <div class="caption">Ika-6 Buwan</div>
+      </a>
+      <a href="images/rainel7.jpg" data-lightbox="rainel" data-title="Ika-7 Buwan">
+        <img src="images/rainel7.jpg" alt="Ika-7 Buwan">
+        <div class="caption">Ika-7 Buwan</div>
+      </a>
+      <a href="images/rainel8.jpg" data-lightbox="rainel" data-title="Ika-8 Buwan">
+        <img src="images/rainel8.jpg" alt="Ika-8 Buwan">
+        <div class="caption">Ika-8 Buwan</div>
+      </a>
+      <a href="images/rainel9.jpg" data-lightbox="rainel" data-title="Ika-9 Buwan">
+        <img src="images/rainel9.jpg" alt="Ika-9 Buwan">
+        <div class="caption">Ika-9 Buwan</div>
+      </a>
+      <a href="images/rainel10.jpg" data-lightbox="rainel" data-title="Ika-10 Buwan">
+        <img src="images/rainel10.jpg" alt="Ika-10 Buwan">
+        <div class="caption">Ika-10 Buwan</div>
+      </a>
+      <a href="images/rainel11.jpg" data-lightbox="rainel" data-title="Ika-11 Buwan">
+        <img src="images/rainel11.jpg" alt="Ika-11 Buwan">
+        <div class="caption">Ika-11 Buwan</div>
+      </a>
+      <a href="images/rainel12.jpg" data-lightbox="rainel" data-title="Ika-12 Buwan">
+        <img src="images/rainel12.jpg" alt="Ika-12 Buwan">
+        <div class="caption">Ika-12 Buwan</div>
+      </a>
     </div>
 
     <a href="index.html" class="back-link">← Bumalik sa Home</a>
