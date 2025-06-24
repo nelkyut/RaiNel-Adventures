@@ -6,6 +6,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
@@ -17,40 +18,37 @@
     }
 
     header {
-      background: rgba(248, 187, 208, 0.9);
-      color: #5c4084;
+      background-color: rgba(248, 187, 208, 0.9);
+      color: #6a1b9a;
       padding: 40px 20px;
       font-family: 'Chewy', cursive;
       font-size: 36px;
       text-align: center;
       border-bottom: 5px dashed #f48fb1;
-      border-radius: 0 0 20px 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
     .container {
       max-width: 900px;
       margin: 40px auto;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.95);
       border-radius: 25px;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     }
 
     h2 {
       font-family: 'Chewy', cursive;
       font-size: 30px;
       margin-bottom: 20px;
-      color: #d81b60;
+      color: #ba68c8;
       text-align: center;
-      text-shadow: 1px 1px 2px #fff;
     }
 
     p {
       font-size: 16px;
       line-height: 1.7;
       margin-bottom: 20px;
-      color: #4e2a60;
     }
 
     .image-box {
@@ -63,15 +61,17 @@
       max-width: 100%;
       width: 350px;
       border-radius: 20px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      border: 3px solid #f48fb1;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.25);
     }
 
     .back-link {
       display: inline-block;
-      margin-top: 20px;
-      color: #ec407a;
+      margin-top: 30px;
+      color: #d81b60;
       text-decoration: none;
       font-weight: bold;
+      font-size: 16px;
     }
 
     .back-link:hover {
@@ -94,30 +94,22 @@
       height: 220px;
       object-fit: cover;
       border-radius: 20px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease, border 0.3s ease;
       border: 3px solid transparent;
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, border 0.3s ease;
     }
 
     .month-gallery a:hover img {
-      transform: scale(1.07);
-      border: 3px solid #f06292;
+      transform: scale(1.05);
+      border: 3px solid #ce93d8;
     }
 
     .caption {
       font-weight: bold;
       font-size: 15px;
       margin-top: 6px;
-      color: #880e4f;
+      color: #8e24aa;
       text-align: center;
-      opacity: 0;
-      transform: translateY(10px);
-      transition: all 0.3s ease-in-out;
-    }
-
-    .month-gallery a:hover .caption {
-      opacity: 1;
-      transform: translateY(0);
     }
 
     @media (max-width: 768px) {
@@ -127,7 +119,7 @@
 
       .container {
         margin: 20px;
-        padding: 15px;
+        padding: 20px;
       }
     }
   </style>
@@ -135,10 +127,108 @@
 <body>
 
   <header>
-    👑 Kwento ng Prinsesa Rainel 🌸
+    👑 Kwento ng Pagdating ni Princess Rainel 💕
   </header>
 
-  <!-- The rest of your content (container, image galleries, etc.) remains unchanged -->
+  <div class="container" data-aos="fade-up">
+    <h2>Ang Simula ng Lahat</h2>
+
+    <p>Noong unang nalaman namin na kami'y magiging magulang, labis ang aming tuwa at kaba. Araw-araw ay puno ng paghahanda, dasal, at pag-asa para sa ligtas at masayang pagdating ng aming munting prinsesa.</p>
+
+    <div class="image-box">
+      <img src="images/ultrasound.jpg" alt="Ultrasound ni baby Rainel">
+      <p><small>📸 Unang ultrasound ni Princess Rainel</small></p>
+    </div>
+
+    <p>📅 <strong>Due Date:</strong> July 10, 2023  
+       <br>👶 <strong>Actual Birth:</strong> July 08, 2023  
+       <br>🏰 <strong>Pinanganak sa:</strong> [CMC, Valenzuela City]</p>
+
+    <p>Ang araw ng kanyang kapanganakan ay puno ng emosyon. Ang bawat minutong lumilipas ay nagiging mas totoo ang realidad — na malapit na naming mayakap ang aming unang anak.</p>
+
+    <div class="image-box">
+      <video controls>
+        <source src="videos/afterbirth.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p><small>🎥 Unang sandali matapos ang paglabas</small></p>
+    </div>
+
+    <p>Nang una naming marinig ang kanyang iyak, napuno ang aming puso ng kakaibang saya. Ang luha ay naging tanda ng sobrang pagmamahal at pasasalamat.</p>
+
+    <div class="image-box">
+      <img src="images/firsthug.jpg" alt="First hug">
+      <p><small>🤱 Unang yakap kay Princess Rainel</small></p>
+    </div>
+
+    <p>At dito nagsimula ang kwento ng aming mahal na Rainel Kyutie — ang aming prinsesa. Isang taon ng pagmamahal, halakhak, at hindi matatawarang alaala.</p>
+
+    <h2>🎀 Buwan-buwan na Alaala ng Isang Prinsesa</h2>
+    <p>Gallery ng mga ngiti, kilos, at kariktan ni Princess Rainel buwan-buwan 🌸</p>
+
+    <div class="month-gallery">
+      <a href="images/rainel1.jpg" data-lightbox="rainel" data-title="1st Month as Aurora">
+        <img src="images/rainel1.jpg" alt="1st Month">
+        <div class="caption">Aurora (1st Month)</div>
+      </a>
+      <a href="images/rainel2.jpg" data-lightbox="rainel" data-title="2nd Month as Mulan">
+        <img src="images/rainel2.jpg" alt="2nd Month">
+        <div class="caption">Mulan (2nd Month)</div>
+      </a>
+      <a href="images/rainel3.jpg" data-lightbox="rainel" data-title="3rd Month as Merida">
+        <img src="images/rainel3.jpg" alt="3rd Month">
+        <div class="caption">Merida (3rd Month)</div>
+      </a>
+      <a href="images/rainel4.jpg" data-lightbox="rainel" data-title="4th Month as Tiana">
+        <img src="images/rainel4.jpg" alt="4th Month">
+        <div class="caption">Tiana (4th Month)</div>
+      </a>
+      <a href="images/rainel5.jpg" data-lightbox="rainel" data-title="5th Month as Jasmine">
+        <img src="images/rainel5.jpg" alt="5th Month">
+        <div class="caption">Jasmine (5th Month)</div>
+      </a>
+      <a href="images/rainel6.jpg" data-lightbox="rainel" data-title="6th Month as Pocahontas">
+        <img src="images/rainel6.jpg" alt="6th Month">
+        <div class="caption">Pocahontas (6th Month)</div>
+      </a>
+      <a href="images/rainel7.jpg" data-lightbox="rainel" data-title="7th Month as Ariel">
+        <img src="images/rainel7.jpg" alt="7th Month">
+        <div class="caption">Ariel (7th Month)</div>
+      </a>
+      <a href="images/rainel8.jpg" data-lightbox="rainel" data-title="8th Month as Snow White">
+        <img src="images/rainel8.jpg" alt="8th Month">
+        <div class="caption">Snow White (8th Month)</div>
+      </a>
+      <a href="images/rainel9.jpg" data-lightbox="rainel" data-title="9th Month as Belle">
+        <img src="images/rainel9.jpg" alt="9th Month">
+        <div class="caption">Belle (9th Month)</div>
+      </a>
+      <a href="images/rainel10.jpg" data-lightbox="rainel" data-title="10th Month as Cinderella">
+        <img src="images/rainel10.jpg" alt="10th Month">
+        <div class="caption">Cinderella (10th Month)</div>
+      </a>
+      <a href="images/rainel11.jpg" data-lightbox="rainel" data-title="11th Month as Rapunzel">
+        <img src="images/rainel11.jpg" alt="11th Month">
+        <div class="caption">Rapunzel (11th Month)</div>
+      </a>
+      <a href="images/rainel12.jpg" data-lightbox="rainel" data-title="12th Month as Princess Rainel">
+        <img src="images/rainel12.jpg" alt="12th Month">
+        <div class="caption">Princess Rainel (12th Month)</div>
+      </a>
+    </div>
+
+    <a href="index.html" class="back-link">← Bumalik sa Home</a>
+  </div>
+
+  <!-- JS Libraries -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      offset: 120,
+    });
+  </script>
 
 </body>
 </html>
