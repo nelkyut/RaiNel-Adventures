@@ -15,6 +15,23 @@
       background: url('images/background-nature.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #5c4084;
+      overflow-x: hidden;
+    }
+
+    .butterfly {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background: url('images/butterfly.gif') no-repeat center center;
+      background-size: contain;
+      animation: float 15s infinite linear;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) translateX(0); opacity: 1; }
+      100% { transform: translateY(-1000px) translateX(300px); opacity: 0; }
     }
 
     header {
@@ -126,98 +143,19 @@
 </head>
 <body>
 
+  <!-- Animated butterflies -->
+  <div class="butterfly" style="top: 80%; left: 10%; animation-delay: 0s;"></div>
+  <div class="butterfly" style="top: 90%; left: 30%; animation-delay: 5s;"></div>
+  <div class="butterfly" style="top: 85%; left: 60%; animation-delay: 10s;"></div>
+  <div class="butterfly" style="top: 100%; left: 80%; animation-delay: 15s;"></div>
+
   <header>
-    👑 Kwento ng Pagdating ni Princess Rainel 💕
+    👑 Kwento ng Pagdating ni Princess Rainel 🌷
   </header>
 
   <div class="container" data-aos="fade-up">
-    <h2>Ang Simula ng Lahat</h2>
-
-    <p>Noong unang nalaman namin na kami'y magiging magulang, labis ang aming tuwa at kaba. Araw-araw ay puno ng paghahanda, dasal, at pag-asa para sa ligtas at masayang pagdating ng aming munting prinsesa.</p>
-
-    <div class="image-box">
-      <img src="images/ultrasound.jpg" alt="Ultrasound ni baby Rainel">
-      <p><small>📸 Unang ultrasound ni Princess Rainel</small></p>
-    </div>
-
-    <p>📅 <strong>Due Date:</strong> July 10, 2023  
-       <br>👶 <strong>Actual Birth:</strong> July 08, 2023  
-       <br>🏰 <strong>Pinanganak sa:</strong> [CMC, Valenzuela City]</p>
-
-    <p>Ang araw ng kanyang kapanganakan ay puno ng emosyon. Ang bawat minutong lumilipas ay nagiging mas totoo ang realidad — na malapit na naming mayakap ang aming unang anak.</p>
-
-    <div class="image-box">
-      <video controls>
-        <source src="videos/afterbirth.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <p><small>🎥 Unang sandali matapos ang paglabas</small></p>
-    </div>
-
-    <p>Nang una naming marinig ang kanyang iyak, napuno ang aming puso ng kakaibang saya. Ang luha ay naging tanda ng sobrang pagmamahal at pasasalamat.</p>
-
-    <div class="image-box">
-      <img src="images/firsthug.jpg" alt="First hug">
-      <p><small>🤱 Unang yakap kay Princess Rainel</small></p>
-    </div>
-
-    <p>At dito nagsimula ang kwento ng aming mahal na Rainel Kyutie — ang aming prinsesa. Isang taon ng pagmamahal, halakhak, at hindi matatawarang alaala.</p>
-
-    <h2>🎀 Buwan-buwan na Alaala ng Isang Prinsesa</h2>
-    <p>Gallery ng mga ngiti, kilos, at kariktan ni Princess Rainel buwan-buwan 🌸</p>
-
-    <div class="month-gallery">
-      <a href="images/rainel1.jpg" data-lightbox="rainel" data-title="1st Month as Aurora">
-        <img src="images/rainel1.jpg" alt="1st Month">
-        <div class="caption">Aurora (1st Month)</div>
-      </a>
-      <a href="images/rainel2.jpg" data-lightbox="rainel" data-title="2nd Month as Mulan">
-        <img src="images/rainel2.jpg" alt="2nd Month">
-        <div class="caption">Mulan (2nd Month)</div>
-      </a>
-      <a href="images/rainel3.jpg" data-lightbox="rainel" data-title="3rd Month as Merida">
-        <img src="images/rainel3.jpg" alt="3rd Month">
-        <div class="caption">Merida (3rd Month)</div>
-      </a>
-      <a href="images/rainel4.jpg" data-lightbox="rainel" data-title="4th Month as Tiana">
-        <img src="images/rainel4.jpg" alt="4th Month">
-        <div class="caption">Tiana (4th Month)</div>
-      </a>
-      <a href="images/rainel5.jpg" data-lightbox="rainel" data-title="5th Month as Jasmine">
-        <img src="images/rainel5.jpg" alt="5th Month">
-        <div class="caption">Jasmine (5th Month)</div>
-      </a>
-      <a href="images/rainel6.jpg" data-lightbox="rainel" data-title="6th Month as Pocahontas">
-        <img src="images/rainel6.jpg" alt="6th Month">
-        <div class="caption">Pocahontas (6th Month)</div>
-      </a>
-      <a href="images/rainel7.jpg" data-lightbox="rainel" data-title="7th Month as Ariel">
-        <img src="images/rainel7.jpg" alt="7th Month">
-        <div class="caption">Ariel (7th Month)</div>
-      </a>
-      <a href="images/rainel8.jpg" data-lightbox="rainel" data-title="8th Month as Snow White">
-        <img src="images/rainel8.jpg" alt="8th Month">
-        <div class="caption">Snow White (8th Month)</div>
-      </a>
-      <a href="images/rainel9.jpg" data-lightbox="rainel" data-title="9th Month as Belle">
-        <img src="images/rainel9.jpg" alt="9th Month">
-        <div class="caption">Belle (9th Month)</div>
-      </a>
-      <a href="images/rainel10.jpg" data-lightbox="rainel" data-title="10th Month as Cinderella">
-        <img src="images/rainel10.jpg" alt="10th Month">
-        <div class="caption">Cinderella (10th Month)</div>
-      </a>
-      <a href="images/rainel11.jpg" data-lightbox="rainel" data-title="11th Month as Rapunzel">
-        <img src="images/rainel11.jpg" alt="11th Month">
-        <div class="caption">Rapunzel (11th Month)</div>
-      </a>
-      <a href="images/rainel12.jpg" data-lightbox="rainel" data-title="12th Month as Princess Rainel">
-        <img src="images/rainel12.jpg" alt="12th Month">
-        <div class="caption">Princess Rainel (12th Month)</div>
-      </a>
-    </div>
-
-    <a href="index.html" class="back-link">← Bumalik sa Home</a>
+    <!-- Your existing content (text, video, gallery, etc.) goes here -->
+    <!-- You can paste the rest of your existing content below this line -->
   </div>
 
   <!-- JS Libraries -->
