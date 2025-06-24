@@ -8,112 +8,123 @@
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Quicksand', sans-serif;
-      background: url('images/background.JPG') fixed center center / cover no-repeat;
-      color: #6a1b9a;
-      text-align: center;
-    }
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Pacifico&display=swap');
 
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    background: url('images/background.JPG') fixed center center / cover no-repeat;
+    color: #2e4d2c;
+    text-align: center;
+  }
+
+  header {
+    background: rgba(34, 139, 34, 0.8); /* forest green w/ transparency */
+    color: #fff;
+    padding: 40px 20px 20px;
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  .intro-text {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #e0f2e9;
+  }
+
+  section {
+    padding: 30px 20px;
+    margin: 30px auto;
+    max-width: 1000px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .gallery-item {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    overflow: hidden;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #c8e6c9;
+  }
+
+  .gallery-item .caption {
+    padding: 12px 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #33691e;
+    background-color: #f1f8e9;
+  }
+
+  .gallery-item:hover {
+    transform: scale(1.05);
+  }
+
+  button {
+    margin: 10px 10px;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #8bc34a; /* light green */
+    color: white;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+
+  button:hover {
+    background-color: #558b2f; /* darker green */
+    transform: translateY(-3px);
+  }
+
+  footer {
+    padding: 20px;
+    font-size: 14px;
+    background: rgba(34, 139, 34, 0.8);
+    color: white;
+  }
+
+  h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
+    color: #2e7d32;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 768px) {
     header {
-      background: #f06292;
-      color: white;
-      padding: 40px 20px 20px;
-      font-family: 'Pacifico', cursive;
-      font-size: 32px;
+      font-size: 24px;
     }
-
-    .intro-text {
-      font-size: 16px;
-      margin-top: 10px;
-      color: white;
-    }
-
-    section {
-      padding: 30px 20px;
-      margin: 30px auto;
-      max-width: 1000px;
-    }
-
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
     .gallery-item {
-      background-color: white;
-      border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      overflow: hidden;
-      width: 280px;
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-
-    .gallery-item img {
       width: 100%;
-      display: block;
-      border-bottom: 1px solid #eee;
     }
-
-    .gallery-item .caption {
-      padding: 12px 10px;
-      font-weight: bold;
-      font-size: 16px;
-      color: #6a1b9a;
-      background-color: white;
-    }
-
-    .gallery-item:hover {
-      transform: scale(1.03);
-    }
-
     button {
-      margin: 10px 10px;
-      padding: 14px 32px;
-      font-size: 16px;
-      font-weight: bold;
-      background-color: #ff7043;
-      color: white;
-      border: none;
-      border-radius: 999px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      width: 90%;
+      justify-content: center;
     }
+  }
+</style>
 
-    button:hover {
-      background-color: #d84315;
-      transform: translateY(-3px);
-    }
-
-    footer {
-      padding: 20px;
-      font-size: 14px;
-      background: #f06292;
-      color: white;
-    }
-
-    @media (max-width: 768px) {
-      header {
-        font-size: 24px;
-      }
-      .gallery-item {
-        width: 100%;
-      }
-      button {
-        width: 90%;
-        justify-content: center;
-      }
-    }
-  </style>
 </head>
 <body>
 
